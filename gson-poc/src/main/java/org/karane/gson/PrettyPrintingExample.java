@@ -11,6 +11,6 @@ public class PrettyPrintingExample {
         Car car = new Car("Audi", 2019, 39000.99);
         String prettyJson = gson.toJson(car);
 
-        System.out.println("Pretty Printed JSON:\\n" + prettyJson);
+        System.out.println("Pretty Printed JSON:\n" + prettyJson);
     }
 }
