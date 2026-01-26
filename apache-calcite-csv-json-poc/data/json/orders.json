@@ -1,0 +1,5 @@
+[
+  { "order_id": 1001, "user_id": 1, "product": "Laptop", "amount": 1200 },
+  { "order_id": 1002, "user_id": 2, "product": "Mouse", "amount": 50 },
+  { "order_id": 1003, "user_id": 2, "product": "Monitor", "amount": 300 }
+]
