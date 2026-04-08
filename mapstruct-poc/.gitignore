@@ -1,0 +1,55 @@
+# Maven output
+target/
+
+####################
+# IntelliJ IDEA
+####################
+# Ignore user-specific and transient files
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf/
+
+# Keep project/module/library configuration
+!.idea/compiler.xml
+!.idea/jarRepositories.xml
+!.idea/modules.xml
+!.idea/libraries/
+
+# Ignore project-specific files
+*.iws
+*.iml
+*.ipr
+
+####################
+# Eclipse (if someone uses it)
+####################
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+####################
+# NetBeans
+####################
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+####################
+# VS Code
+####################
+.vscode/
+
+####################
+# macOS
+####################
+.DS_Store
