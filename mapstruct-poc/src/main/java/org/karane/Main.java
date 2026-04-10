@@ -23,5 +23,8 @@ public class Main {
         AddressDTO ex02 = Ex02FieldRenameMapper.INSTANCE.toDTO(address);
         System.out.println("Ex02 postalCode=" + ex02.getPostalCode());
 
+        Address ex03 = Ex03ReverseMappingMapper.INSTANCE.toModel(ex02);
+        System.out.println("Ex03 zipCode=" + ex03.getZipCode());
+
     }
 }
