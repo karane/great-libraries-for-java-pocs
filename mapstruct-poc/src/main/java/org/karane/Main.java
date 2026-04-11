@@ -26,5 +26,9 @@ public class Main {
         Address ex03 = Ex03ReverseMappingMapper.INSTANCE.toModel(ex02);
         System.out.println("Ex03 zipCode=" + ex03.getZipCode());
 
+        PersonContactDTO ex04 = Ex04NestedPropertyMapper.INSTANCE.toDTO(person);
+        System.out.println("Ex04 phoneNumber=" + ex04.getPhoneNumber());
+
+
     }
 }
