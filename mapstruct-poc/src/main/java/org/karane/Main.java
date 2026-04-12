@@ -29,6 +29,7 @@ public class Main {
         PersonContactDTO ex04 = Ex04NestedPropertyMapper.INSTANCE.toDTO(person);
         System.out.println("Ex04 phoneNumber=" + ex04.getPhoneNumber());
 
-
+        PersonDisplayDTO ex05 = Ex05ExpressionMapper.INSTANCE.toDTO(person);
+        System.out.println("Ex05 fullName=" + ex05.getFullName() + " birthYear=" + ex05.getBirthYear());
     }
 }
