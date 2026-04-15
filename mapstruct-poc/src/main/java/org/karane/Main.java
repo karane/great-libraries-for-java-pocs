@@ -31,5 +31,9 @@ public class Main {
 
         PersonDisplayDTO ex05 = Ex05ExpressionMapper.INSTANCE.toDTO(person);
         System.out.println("Ex05 fullName=" + ex05.getFullName() + " birthYear=" + ex05.getBirthYear());
+
+        PersonWithAddressDTO ex06 = Ex06NestedObjectMapper.INSTANCE.toDTO(person);
+        System.out.println("Ex06 postalCode=" + ex06.getAddress().getPostalCode());
+        
     }
 }
