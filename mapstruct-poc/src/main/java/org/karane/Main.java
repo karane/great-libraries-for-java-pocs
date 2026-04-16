@@ -34,6 +34,8 @@ public class Main {
 
         PersonWithAddressDTO ex06 = Ex06NestedObjectMapper.INSTANCE.toDTO(person);
         System.out.println("Ex06 postalCode=" + ex06.getAddress().getPostalCode());
-        
+
+        List<PersonDisplayDTO> ex07 = Ex07CollectionMapper.INSTANCE.toDTOList(List.of(person, person));
+        System.out.println("Ex07 listSize=" + ex07.size());
     }
 }
