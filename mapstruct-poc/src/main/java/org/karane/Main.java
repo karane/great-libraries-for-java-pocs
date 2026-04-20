@@ -37,5 +37,9 @@ public class Main {
 
         List<PersonDisplayDTO> ex07 = Ex07CollectionMapper.INSTANCE.toDTOList(List.of(person, person));
         System.out.println("Ex07 listSize=" + ex07.size());
+
+        PersonContactDTO ex08 = Ex08CustomConverterMapper.INSTANCE.toDTO(person);
+        System.out.println("Ex08 phoneNumber=" + ex08.getPhoneNumber());
+
     }
 }
