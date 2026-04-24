@@ -41,5 +41,11 @@ public class Main {
         PersonContactDTO ex08 = Ex08CustomConverterMapper.INSTANCE.toDTO(person);
         System.out.println("Ex08 phoneNumber=" + ex08.getPhoneNumber());
 
+        PersonSameNameDTO ex09person = Ex09SubclassMapper.INSTANCE.toDTO(person);
+        PersonSameNameDTO ex09employee = Ex09SubclassMapper.INSTANCE.toDTO(employee);
+        System.out.println("Ex09 person isEmployee=" + (ex09person instanceof EmployeeBaseDTO));
+        System.out.println("Ex09 employee isEmployee=" + (ex09employee instanceof EmployeeBaseDTO));
+        System.out.println("Ex09 department=" + ((EmployeeBaseDTO) ex09employee).getDepartment());
+
     }
 }
