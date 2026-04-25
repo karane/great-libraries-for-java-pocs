@@ -47,5 +47,23 @@ public class Main {
         System.out.println("Ex09 employee isEmployee=" + (ex09employee instanceof EmployeeBaseDTO));
         System.out.println("Ex09 department=" + ((EmployeeBaseDTO) ex09employee).getDepartment());
 
+        
+        AddressDTO newAddr = new AddressDTO();
+
+        newAddr.setStreet("99 New Rd"); 
+        newAddr.setCity("Chicago"); 
+        newAddr.setState("IL"); 
+        newAddr.setPostalCode("60601");
+        
+        PersonUpdateDTO updateDTO = new PersonUpdateDTO();
+
+        updateDTO.setEmail("john.updated@example.com");
+
+        updateDTO.setAddress(newAddr);
+
+        Ex10UpdateInPlaceMapper.INSTANCE.update(updateDTO, person);
+
+        System.out.println("Ex10 updatedEmail=" + person.getEmail() + " zipCode=" + person.getAddress().getZipCode());
+
     }
 }
